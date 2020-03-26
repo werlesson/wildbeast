@@ -5,24 +5,9 @@
     "header header header"
     "sidenav content anuncios"
     "footer footer footer";
-
-  .header {
-    grid-area: header;
-  }
-
-  .sidenav {
-    grid-area: sidenav;
-  }
-
-  .content {
-    grid-area: content;
-  }
-
-  .anuncios {
-    grid-area: anuncios;
-  }
-
-  .footer {
-    grid-area: footer;
-  }
+  @include grid-area(header);
+  @include grid-area(sidenav);
+  @include grid-area(content);
+  @include grid-area(anuncios);
+  @include grid-area(footer);
 }

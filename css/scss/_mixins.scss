@@ -1,0 +1,6 @@
+@mixin grid-area($name) {
+  .#{$name} {
+    grid-area: #{$name};
+    @content;
+  }
+}
