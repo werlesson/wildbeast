@@ -1,0 +1,23 @@
+{
+  "name": "wildbeast",
+  "version": "1.0.0",
+  "description": "Projeto para explorar os conhecimentos sobre CSS Grid Layout",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --watch css/sass:css",
+    "build-compressed": "sass --watch css/sass:css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werlesson/wildbeast.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/werlesson/wildbeast/issues"
+  },
+  "homepage": "https://github.com/werlesson/wildbeast#readme",
+  "dependencies": {
+    "sass": "^1.26.3"
+  }
+}
