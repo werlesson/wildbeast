@@ -21,7 +21,7 @@
       color: white;
       font-size: 1.125rem;
       background: rgba(black, .1);
-      border-radius: 5px;
+      border-radius: $border-radius;
       transition: .1s;
 
       &:hover {

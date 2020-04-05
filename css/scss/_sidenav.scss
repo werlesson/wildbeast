@@ -1,0 +1,22 @@
+@include grid-area(sidenav) {
+  background-color: $background;
+  padding: 30px;
+
+  li {
+    a {
+      display: block;
+      min-width: 60px;
+      max-width: 100px;
+      margin: 0 auto 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: $border-radius;
+      box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, .15);
+      transition: .1s ease-out;
+
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
+}
