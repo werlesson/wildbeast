@@ -5,7 +5,6 @@
     "header header header"
     "sidenav content anuncios"
     "footer footer footer";
-  @include grid-area(header);
   @include grid-area(sidenav);
   @include grid-area(content);
   @include grid-area(anuncios);

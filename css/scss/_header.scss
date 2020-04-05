@@ -1,0 +1,36 @@
+@include grid-area(header) {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
+  .logo {
+    max-width: 200px;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+      color: white;
+      font-size: 1.125rem;
+      background: rgba(black, .1);
+      border-radius: 5px;
+      transition: .1s;
+
+      &:hover {
+        background: rgba(black, .5);
+      }
+    }
+
+    li+li {
+      margin-left: 30px;
+    }
+  }
+}
