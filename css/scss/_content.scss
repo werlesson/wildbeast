@@ -1,0 +1,125 @@
+@include grid-area(content) {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: $padding;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: $padding;
+
+	.col-wide {
+		grid-column: 1 / -1;
+	}
+
+	.imagem-1 {
+		grid-row: span 2;
+		@extend .imagem-2;
+	}
+
+	.imagem-2 {
+		align-self: end;
+	}
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		letter-spacing: -0.005rem;
+		color: $color;
+	}
+
+	.informacoes {
+		p+p {
+			margin-top: $padding;
+		}
+	}
+
+	.titulo {
+		color: $secondary-color;
+
+		h1 {
+			font-size: 3.75rem;
+			line-height: 1;
+			font-weight: 700;
+		}
+
+		span {
+			font-size: 0.875rem;
+			font-style: italic;
+		}
+	}
+
+	.caracteristicas {
+		display: flex;
+		align-items: flex-start;
+
+		&>div {
+			width: 80px;
+			text-align: center;
+			background: $gradient;
+			border-radius: $border-radius;
+			box-shadow: $shadow;
+			position: relative;
+		}
+
+		div:first-child {
+			margin-right: $padding;
+		}
+
+		.numero {
+			font-size: 3rem;
+			line-height: 1;
+			margin: 10px auto;
+		}
+
+		.rotulo {
+			background: white;
+			border-radius: 0 0 $border-radius $border-radius;
+			padding: 5px 0;
+			position: relative;
+			top: 2px
+		}
+
+		span {
+			display: block;
+			color: $secondary-color;
+		}
+	}
+
+	.destaque {
+		font-size: 0.875rem;
+		color: $secondary-color;
+		max-width: 16rem;
+	}
+
+	.citacao {
+		padding: $padding;
+		border-radius: $border-radius;
+		box-shadow: $shadow;
+		background: $gradient;
+		align-self: start;
+
+		p {
+			font-size: 1.5rem;
+			font-style: italic;
+			text-align: center;
+			margin: 0 auto;
+			max-width: 500px;
+			color: white;
+		}
+	}
+
+	.atributos {
+		@extend .citacao;
+
+		li {
+			color: white;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 1.125rem;
+			padding: 15px;
+
+			&+li {
+				border-top: 2px solid $secondary-color;
+			}
+		}
+	}
+
+}
