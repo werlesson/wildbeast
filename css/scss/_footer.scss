@@ -1,0 +1,8 @@
+@include grid-area(footer) {
+  background: $gradient;
+
+  p {
+    text-align: center;
+    padding: $padding;
+  }
+}

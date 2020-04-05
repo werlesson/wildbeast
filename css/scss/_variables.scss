@@ -5,5 +5,7 @@ serif;
 $primary-color: #8844ee;
 $secondary-color: #b07dfb;
 $background: #fafbfc;
+$gradient: linear-gradient(135deg, $primary-color, $secondary-color);
 
 $border-radius: 5px;
+$padding: 30px;

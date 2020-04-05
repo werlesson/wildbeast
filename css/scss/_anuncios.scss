@@ -1,0 +1,7 @@
+@include grid-area(anuncios) {
+  background: $background;
+  display: grid;
+  align-content: start;
+  padding: $padding;
+  grid-gap: $padding;
+}

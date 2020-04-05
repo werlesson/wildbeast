@@ -23,6 +23,8 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
+  border-radius: 5px;
 }
 
 .estrutura {
@@ -32,12 +34,6 @@ img {
 }
 .estrutura .content {
   grid-area: content;
-}
-.estrutura .anuncios {
-  grid-area: anuncios;
-}
-.estrutura .footer {
-  grid-area: footer;
 }
 
 .header {
@@ -89,6 +85,24 @@ img {
 }
 .sidenav li a:hover {
   background: #b07dfb;
+}
+
+.anuncios {
+  grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  grid-gap: 30px;
+}
+
+.footer {
+  grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+.footer p {
+  text-align: center;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

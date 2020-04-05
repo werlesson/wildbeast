@@ -6,6 +6,4 @@
     "sidenav content anuncios"
     "footer footer footer";
   @include grid-area(content);
-  @include grid-area(anuncios);
-  @include grid-area(footer);
 }

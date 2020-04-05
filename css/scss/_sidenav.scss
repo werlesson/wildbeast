@@ -1,6 +1,6 @@
 @include grid-area(sidenav) {
   background-color: $background;
-  padding: 30px;
+  padding: $padding;
 
   li {
     a {
