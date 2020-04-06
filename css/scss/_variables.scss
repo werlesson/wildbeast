@@ -1,13 +1,15 @@
-$font-1: "Vollkorn",
-Georgia,
-serif;
+$font-1: "Vollkorn", Georgia, serif;
 
 $primary-color: #8844ee;
 $secondary-color: #b07dfb;
 $background: #fafbfc;
 $gradient: linear-gradient(135deg, $primary-color, $secondary-color);
-$color: rgba(0, 0, 0, .7);
-$shadow: 5px 5px 15px 0 rgba(44, 44, 44, .15);
+$color: rgba(0, 0, 0, 0.7);
+$shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
 
 $border-radius: 5px;
 $padding: 30px;
+
+$l-device: 1200px;
+$m-device: 760px;
+$s-device: 600px;

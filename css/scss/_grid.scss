@@ -5,4 +5,20 @@
     "header header header"
     "sidenav content anuncios"
     "footer footer footer";
+  @include d(m) {
+    grid-template-areas:
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer";
+  }
+  @include d(s) {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
+  }
 }

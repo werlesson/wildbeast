@@ -1,125 +1,128 @@
 @include grid-area(content) {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: $padding;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: $padding;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: $padding;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $padding;
 
-	.col-wide {
-		grid-column: 1 / -1;
-	}
+  @include d(xs) {
+    grid-template-columns: auto;
+  }
 
-	.imagem-1 {
-		grid-row: span 2;
-		@extend .imagem-2;
-	}
+  .col-wide {
+    grid-column: 1 / -1;
+  }
 
-	.imagem-2 {
-		align-self: end;
-	}
+  .imagem-1 {
+    grid-row: span 2;
+    @extend .imagem-2;
+  }
 
-	p {
-		font-size: 1.2rem;
-		line-height: 1.6rem;
-		letter-spacing: -0.005rem;
-		color: $color;
-	}
+  .imagem-2 {
+    align-self: end;
+  }
 
-	.informacoes {
-		p+p {
-			margin-top: $padding;
-		}
-	}
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: -0.005rem;
+    color: $color;
+  }
 
-	.titulo {
-		color: $secondary-color;
+  .informacoes {
+    p + p {
+      margin-top: $padding;
+    }
+  }
 
-		h1 {
-			font-size: 3.75rem;
-			line-height: 1;
-			font-weight: 700;
-		}
+  .titulo {
+    color: $secondary-color;
 
-		span {
-			font-size: 0.875rem;
-			font-style: italic;
-		}
-	}
+    h1 {
+      font-size: 3.75rem;
+      line-height: 1;
+      font-weight: 700;
+    }
 
-	.caracteristicas {
-		display: flex;
-		align-items: flex-start;
+    span {
+      font-size: 0.875rem;
+      font-style: italic;
+    }
+  }
 
-		&>div {
-			width: 80px;
-			text-align: center;
-			background: $gradient;
-			border-radius: $border-radius;
-			box-shadow: $shadow;
-			position: relative;
-		}
+  .caracteristicas {
+    display: flex;
+    align-items: flex-start;
 
-		div:first-child {
-			margin-right: $padding;
-		}
+    & > div {
+      width: 80px;
+      text-align: center;
+      background: $gradient;
+      border-radius: $border-radius;
+      box-shadow: $shadow;
+      position: relative;
+    }
 
-		.numero {
-			font-size: 3rem;
-			line-height: 1;
-			margin: 10px auto;
-		}
+    div:first-child {
+      margin-right: $padding;
+    }
 
-		.rotulo {
-			background: white;
-			border-radius: 0 0 $border-radius $border-radius;
-			padding: 5px 0;
-			position: relative;
-			top: 2px
-		}
+    .numero {
+      font-size: 3rem;
+      line-height: 1;
+      margin: 10px auto;
+    }
 
-		span {
-			display: block;
-			color: $secondary-color;
-		}
-	}
+    .rotulo {
+      background: white;
+      border-radius: 0 0 $border-radius $border-radius;
+      padding: 5px 0;
+      position: relative;
+      top: 2px;
+    }
 
-	.destaque {
-		font-size: 0.875rem;
-		color: $secondary-color;
-		max-width: 16rem;
-	}
+    span {
+      display: block;
+      color: $secondary-color;
+    }
+  }
 
-	.citacao {
-		padding: $padding;
-		border-radius: $border-radius;
-		box-shadow: $shadow;
-		background: $gradient;
-		align-self: start;
+  .destaque {
+    font-size: 0.875rem;
+    color: $secondary-color;
+    max-width: 16rem;
+  }
 
-		p {
-			font-size: 1.5rem;
-			font-style: italic;
-			text-align: center;
-			margin: 0 auto;
-			max-width: 500px;
-			color: white;
-		}
-	}
+  .citacao {
+    padding: $padding;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    background: $gradient;
+    align-self: start;
 
-	.atributos {
-		@extend .citacao;
+    p {
+      font-size: 1.5rem;
+      font-style: italic;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 500px;
+      color: white;
+    }
+  }
 
-		li {
-			color: white;
-			font-family: 'Courier New', Courier, monospace;
-			font-size: 1.125rem;
-			padding: 15px;
+  .atributos {
+    @extend .citacao;
 
-			&+li {
-				border-top: 2px solid $secondary-color;
-			}
-		}
-	}
+    li {
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1.125rem;
+      padding: 15px;
 
+      & + li {
+        border-top: 2px solid $secondary-color;
+      }
+    }
+  }
 }
